@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taha | Digital Solutions</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon configuration -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body class="lang-en">
+    <!-- Default to English -->
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo-container">
+        <!-- Added specific class for nav logo to handle contrast -->
+        <img
+          src="fulllogo.png"
+          alt="Taha Full Logo"
+          class="nav-logo invert-effect"
+        />
+      </div>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" onclick="toggleLanguage()">TR | EN</button>
+        <button class="cta-button nav-cta" onclick="scrollToContact()">
+          <span class="en-text">Start a Request</span>
+          <span class="tr-text">Talep Oluştur</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <!-- Giant Animated Logo Background -->
+      <div class="hero-logo-container">
+        <!-- Using logoalone for the big center piece, applying invert to make it white -->
+        <img
+          src="logoalone.png"
+          alt="Taha Logo"
+          class="hero-main-logo invert-effect"
+        />
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="en-text">
+            <span class="reveal-text">Elevating</span>
+            <span class="reveal-text highlight">Local Shops</span>
+          </span>
+          <span class="tr-text">
+            <span class="reveal-text">Yerel İşletmeleri</span>
+            <span class="reveal-text highlight">Yükseltiyoruz</span>
+          </span>
+        </h1>
+        <p class="hero-subtitle">
+          <span class="en-text"
+            >Premium E-Menus & Websites geared for success.</span
+          >
+          <span class="tr-text"
+            >Başarıya odaklı Premium E-Menüler ve Web Siteleri.</span
+          >
+        </p>
+      </div>
+
+      <div class="scroll-indicator">
+        <span class="en-text">See How We Work</span>
+        <span class="tr-text">Nasıl Çalışıyoruz</span>
+        <div class="mouse"></div>
+      </div>
+    </header>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+      <h2 class="section-title">
+        <span class="en-text">The Craft</span>
+        <span class="tr-text">Sanatımız</span>
+      </h2>
+
+      <div class="timeline">
+        <!-- Step 1: E-Menus -->
+        <div class="process-step left">
+          <div class="step-content glass-card aesthetic-card">
+            <div class="step-number">01</div>
+            <h3>
+              <span class="en-text">Touchless</span>
+              <span class="tr-text">Temassız</span>
+            </h3>
+            <p class="en-text aesthetic-text">
+              Physical menus are past tense. We engineer QR systems that load
+              instantly, feel premium, and keep operations fluid.
+            </p>
+            <p class="tr-text aesthetic-text">
+              Fiziksel menüler geçmişte kaldı. Anında yüklenen, premium
+              hissettiren ve operasyonu akıcı kılan QR sistemleri tasarlıyoruz.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2: Websites -->
+        <div class="process-step right">
+          <div class="step-content glass-card aesthetic-card">
+            <div class="step-number">02</div>
+            <h3>
+              <span class="en-text">Presence</span>
+              <span class="tr-text">Varlık</span>
+            </h3>
+            <p class="en-text aesthetic-text">
+              A website isn’t just a URL. It’s your digital flagship. We build
+              bespoke, high-performance spaces that convert visitors into
+              loyalists.
+            </p>
+            <p class="tr-text aesthetic-text">
+              Web sitesi sadece bir link değildir. O sizin dijital amiral
+              geminizdir. Ziyaretçileri sadık müşterilere dönüştüren yüksek
+              performanslı alanlar inşa ediyoruz.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3: Deployment -->
+        <div class="process-step left">
+          <div class="step-content glass-card aesthetic-card">
+            <div class="step-number">03</div>
+            <h3>
+              <span class="en-text">Velocity</span>
+              <span class="tr-text">Hız</span>
+            </h3>
+            <p class="en-text aesthetic-text">
+              No wasted time. From concept to deployment, our pipeline is
+              streamlined for speed without sacrificing a single pixel of
+              quality.
+            </p>
+            <p class="tr-text aesthetic-text">
+              Zaman kaybı yok. Fikirden yayına, kaliteden ödün vermeden hız için
+              optimize edilmiş bir süreç yönetiyoruz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Email Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container glass-panel">
+        <div class="logo-mark">
+          <!-- Inverted small logo -->
+          <img src="logoalone.png" alt="Logo Mark" class="invert-effect" />
+        </div>
+        <h2>
+          <span class="en-text">Ready to Upgrade?</span>
+          <span class="tr-text">Yükseltmeye Hazır mısınız?</span>
+        </h2>
+        <p>
+          <span class="en-text">Direct line to our team.</span>
+          <span class="tr-text">Ekibimize doğrudan ulaşın.</span>
+        </p>
+
+        <form id="emailForm" class="email-form" onsubmit="handleEmail(event)">
+          <div class="input-group">
+            <input
+              type="email"
+              id="senderEmail"
+              class="en-placeholder tr-placeholder"
+              placeholder="Your Email / E-Posta Adresiniz"
+              required
+            />
+          </div>
+          <!-- Updated Placeholder to Project Description -->
+          <div class="input-group">
+            <input
+              type="text"
+              id="subject"
+              class="en-placeholder tr-placeholder"
+              placeholder="Project Description / Proje Açıklaması"
+              required
+            />
+          </div>
+
+          <button type="submit" class="send-btn">
+            <span class="btn-text">
+              <span class="en-text">Send Request</span>
+              <span class="tr-text">Talep Gönder</span>
+            </span>
+            <span class="btn-icon">→</span>
+          </button>
+        </form>
+        <p class="email-address-display">richeracx@gmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2026 Taha.
+        <span class="en-text">All Rights Reserved.</span>
+        <span class="tr-text">Tüm Hakları Saklıdır.</span>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
