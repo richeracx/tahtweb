@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taha-web.vercel.app/sitemap.xml
