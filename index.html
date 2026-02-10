@@ -39,10 +39,13 @@
       </div>
 
       <div class="nav-actions">
-        <button class="lang-toggle" onclick="toggleLanguage()">TR | EN</button>
+        <button class="lang-toggle" onclick="toggleLanguage()">
+          EN | TR | AR
+        </button>
         <button class="cta-button nav-cta" onclick="scrollToContact()">
           <span class="en-text">Start a Request</span>
           <span class="tr-text">Talep Oluştur</span>
+          <span class="ar-text">ابدأ طلباً</span>
         </button>
       </div>
     </nav>
@@ -69,6 +72,10 @@
             <span class="reveal-text">Yerel İşletmeleri</span>
             <span class="reveal-text highlight">Yükseltiyoruz</span>
           </span>
+          <span class="ar-text">
+            <span class="reveal-text">نرتقي</span>
+            <span class="reveal-text highlight">بالمتاجر المحلية</span>
+          </span>
         </h1>
         <p class="hero-subtitle">
           <span class="en-text"
@@ -77,12 +84,16 @@
           <span class="tr-text"
             >Başarıya odaklı Premium E-Menüler ve Web Siteleri.</span
           >
+          <span class="ar-text"
+            >قوائم إلكترونية ومواقع ويب فاخرة مصممة للنجاح.</span
+          >
         </p>
       </div>
 
       <div class="scroll-indicator">
         <span class="en-text">See How We Work</span>
         <span class="tr-text">Nasıl Çalışıyoruz</span>
+        <span class="ar-text">شاهد كيف نعمل</span>
         <div class="mouse"></div>
       </div>
     </header>
@@ -92,6 +103,7 @@
       <h2 class="section-title">
         <span class="en-text">The Craft</span>
         <span class="tr-text">Sanatımız</span>
+        <span class="ar-text">الحرفة</span>
       </h2>
 
       <div class="timeline">
@@ -102,6 +114,7 @@
             <h3>
               <span class="en-text">Touchless</span>
               <span class="tr-text">Temassız</span>
+              <span class="ar-text">بدون تلامس</span>
             </h3>
             <p class="en-text aesthetic-text">
               Physical menus are past tense. We engineer QR systems that load
@@ -110,6 +123,10 @@
             <p class="tr-text aesthetic-text">
               Fiziksel menüler geçmişte kaldı. Anında yüklenen, premium
               hissettiren ve operasyonu akıcı kılan QR sistemleri tasarlıyoruz.
+            </p>
+            <p class="ar-text aesthetic-text">
+              القوائم الورقية أصبحت من الماضي. نصمم أنظمة QR تفتح فوراً، تبدو
+              فاخرة، وتجعل العمليات سلسة.
             </p>
           </div>
         </div>
@@ -121,6 +138,7 @@
             <h3>
               <span class="en-text">Presence</span>
               <span class="tr-text">Varlık</span>
+              <span class="ar-text">التواجد الرقمي</span>
             </h3>
             <p class="en-text aesthetic-text">
               A website isn’t just a URL. It’s your digital flagship. We build
@@ -132,6 +150,10 @@
               geminizdir. Ziyaretçileri sadık müşterilere dönüştüren yüksek
               performanslı alanlar inşa ediyoruz.
             </p>
+            <p class="ar-text aesthetic-text">
+              الموقع الإلكتروني ليس مجرد رابط. إنه واجهتك الرقمية. نبني مساحات
+              مخصصة وعالية الأداء تحول الزوار إلى عملاء دائمين.
+            </p>
           </div>
         </div>
 
@@ -142,6 +164,7 @@
             <h3>
               <span class="en-text">Velocity</span>
               <span class="tr-text">Hız</span>
+              <span class="ar-text">السرعة</span>
             </h3>
             <p class="en-text aesthetic-text">
               No wasted time. From concept to deployment, our pipeline is
@@ -151,6 +174,10 @@
             <p class="tr-text aesthetic-text">
               Zaman kaybı yok. Fikirden yayına, kaliteden ödün vermeden hız için
               optimize edilmiş bir süreç yönetiyoruz.
+            </p>
+            <p class="ar-text aesthetic-text">
+              لا وقت مهدور. من الفكرة إلى التنفيذ، منهجيتنا مصممة للسرعة دون
+              التضحية بأي تفصيل من الجودة.
             </p>
           </div>
         </div>
@@ -167,10 +194,12 @@
         <h2>
           <span class="en-text">Ready to Upgrade?</span>
           <span class="tr-text">Yükseltmeye Hazır mısınız?</span>
+          <span class="ar-text">جاهز للتطوير؟</span>
         </h2>
         <p>
           <span class="en-text">Direct line to our team.</span>
           <span class="tr-text">Ekibimize doğrudan ulaşın.</span>
+          <span class="ar-text">تواصل مباشر مع فريقنا.</span>
         </p>
 
         <form id="emailForm" class="email-form" onsubmit="handleEmail(event)">
@@ -178,8 +207,8 @@
             <input
               type="email"
               id="senderEmail"
-              class="en-placeholder tr-placeholder"
-              placeholder="Your Email / E-Posta Adresiniz"
+              class="en-placeholder tr-placeholder ar-placeholder"
+              placeholder="Your Email / E-Posta / البريد الإلكتروني"
               required
             />
           </div>
@@ -188,8 +217,8 @@
             <input
               type="text"
               id="subject"
-              class="en-placeholder tr-placeholder"
-              placeholder="Project Description / Proje Açıklaması"
+              class="en-placeholder tr-placeholder ar-placeholder"
+              placeholder="Project Description / Proje Açıklaması / وصف المشروع"
               required
             />
           </div>
@@ -198,6 +227,7 @@
             <span class="btn-text">
               <span class="en-text">Send Request</span>
               <span class="tr-text">Talep Gönder</span>
+              <span class="ar-text">أرسل الطلب</span>
             </span>
             <span class="btn-icon">→</span>
           </button>
@@ -211,6 +241,7 @@
         &copy; 2026 Taha.
         <span class="en-text">All Rights Reserved.</span>
         <span class="tr-text">Tüm Hakları Saklıdır.</span>
+        <span class="ar-text">جميع الحقوق محفوظة.</span>
       </p>
     </footer>
 

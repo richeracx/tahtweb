@@ -25,17 +25,41 @@ body {
 
 /* --- Language Visibility Logic --- */
 /* By default hide TR, show EN. The JS will toggle the body class. */
-body.lang-en .tr-text {
+body.lang-en .tr-text,
+body.lang-en .ar-text {
   display: none;
 }
 body.lang-en .en-text {
   display: inline-block;
 }
 
-body.lang-tr .en-text {
+body.lang-tr .en-text,
+body.lang-tr .ar-text {
   display: none;
 }
 body.lang-tr .tr-text {
+  display: inline-block;
+}
+
+body.lang-ar .en-text,
+body.lang-ar .tr-text {
+  display: none;
+}
+body.lang-ar .ar-text {
+  display: inline-block;
+}
+body.lang-ar {
+  direction: rtl;
+  text-align: right;
+}
+/* Fix Font for Arabic if needed, though Space Grotesk/Outfit might support it, system font fallback is safer or a specific Arabic font */
+body.lang-ar {
+  font-family:
+    "Outfit", sans-serif; /* Outfit usually supports Arabic well or falls back */
+}
+/* Flip arrow icon in button */
+body.lang-ar .btn-icon {
+  transform: rotate(180deg);
   display: inline-block;
 }
 

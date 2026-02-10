@@ -43,20 +43,30 @@ processSteps.forEach((step) => {
 
 // --- Language Toggle Logic ---
 // --- Language Toggle Logic ---
+// --- Language Toggle Logic ---
 function toggleLanguage() {
   const body = document.body;
+  const emailInput = document.getElementById("senderEmail");
+  const subjectInput = document.getElementById("subject");
+
   if (body.classList.contains("lang-en")) {
+    // Switch to TR
     body.classList.remove("lang-en");
     body.classList.add("lang-tr");
-    // Update input placeholder for Turkish
-    const input = document.getElementById("subject");
-    if (input) input.placeholder = "Proje Açıklaması...";
-  } else {
+    if (emailInput) emailInput.placeholder = "E-Posta Adresiniz...";
+    if (subjectInput) subjectInput.placeholder = "Proje Açıklaması...";
+  } else if (body.classList.contains("lang-tr")) {
+    // Switch to AR
     body.classList.remove("lang-tr");
+    body.classList.add("lang-ar");
+    if (emailInput) emailInput.placeholder = "بريدك الإلكتروني...";
+    if (subjectInput) subjectInput.placeholder = "وصف المشروع...";
+  } else {
+    // Switch back to EN
+    body.classList.remove("lang-ar");
     body.classList.add("lang-en");
-    // Update input placeholder for English
-    const input = document.getElementById("subject");
-    if (input) input.placeholder = "Project Description...";
+    if (emailInput) emailInput.placeholder = "Your Email...";
+    if (subjectInput) subjectInput.placeholder = "Project Description...";
   }
 }
 
@@ -90,9 +100,12 @@ function handleEmail(event) {
   // so let's just do a simple generic feedback
   const originalHTML = btnText.innerHTML;
 
-  btnText.innerText = document.body.classList.contains("lang-tr")
-    ? "Açılıyor..."
-    : "Opening...";
+  let sendingText = "Opening...";
+  if (document.body.classList.contains("lang-tr")) sendingText = "Açılıyor...";
+  if (document.body.classList.contains("lang-ar"))
+    sendingText = "جاري الفتح...";
+
+  btnText.innerText = sendingText;
 
   setTimeout(() => {
     btnText.innerHTML = originalHTML;
